@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Stop watch</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<style>
+    .container{
+        position: relative;
+       top:230px;
+       text-align: center;
+    }
+    .text{
+        font-size: 30px;
+        position: relative;
+       letter-spacing: 4px;
+       margin-top:20px;
+       font-family: FreeMono, monospace;
+       margin-bottom: -10px;
+       
+    }
+    .buttons{
+        position: relative;
+        margin-top: 20px;
+    }
+    .bu{
+        border-radius: 10px;
+        font-family: FreeMono, monospace;
+    }
+</style>
+</head>
+<body>
+
+<div class="container" style="width:300px;height: 200px;border:solid 2px black;border-radius: 20px;">
+    <div class="text">H:M:S:MS</div>
+    <div class="stopwatch" id="stop" style="font-size: 33px;font-family: FreeMono, monospace;">00:00:00:00</div>
+    <hr style="border-bottom: solid 2px black;">
+    <div class="buttons">
+        <button type="button" onclick="start()" class="bu">Start</button>
+        <button type="button" onclick="pause()" class="bu">Pause</button>
+       <button type="button" onclick="stop()" class="bu">Clear</button>
+        <button type="button" onclick="reset()" class="bu">Reset</button>
+    </div>
+    </div>
+    <script src="watch.js"></script>
+    </body>
+    </html>
